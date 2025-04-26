@@ -1,2 +1,2 @@
 # KSM
-KummonstudentsScoreManagement
+Kumon students Score Management system
