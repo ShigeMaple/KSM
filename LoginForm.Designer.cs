@@ -36,8 +36,6 @@
             this.PassWordLabel = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.LoginBtn = new System.Windows.Forms.Button();
-            this.NewRegisterLabel = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.ReRegisterPassLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.icon)).BeginInit();
             this.SuspendLayout();
@@ -129,36 +127,12 @@
             this.LoginBtn.UseVisualStyleBackColor = false;
             this.LoginBtn.Click += new System.EventHandler(this.button1_Click);
             // 
-            // NewRegisterLabel
-            // 
-            this.NewRegisterLabel.AutoSize = true;
-            this.NewRegisterLabel.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.NewRegisterLabel.ForeColor = System.Drawing.Color.Black;
-            this.NewRegisterLabel.Location = new System.Drawing.Point(164, 376);
-            this.NewRegisterLabel.Name = "NewRegisterLabel";
-            this.NewRegisterLabel.Size = new System.Drawing.Size(61, 20);
-            this.NewRegisterLabel.TabIndex = 13;
-            this.NewRegisterLabel.Text = "新規登録";
-            this.NewRegisterLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(170, 401);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 20);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "または";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // ReRegisterPassLabel
             // 
             this.ReRegisterPassLabel.AutoSize = true;
             this.ReRegisterPassLabel.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.ReRegisterPassLabel.ForeColor = System.Drawing.Color.Black;
-            this.ReRegisterPassLabel.Location = new System.Drawing.Point(121, 424);
+            this.ReRegisterPassLabel.Location = new System.Drawing.Point(123, 408);
             this.ReRegisterPassLabel.Name = "ReRegisterPassLabel";
             this.ReRegisterPassLabel.Size = new System.Drawing.Size(152, 20);
             this.ReRegisterPassLabel.TabIndex = 15;
@@ -172,8 +146,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(393, 506);
             this.Controls.Add(this.ReRegisterPassLabel);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.NewRegisterLabel);
             this.Controls.Add(this.LoginBtn);
             this.Controls.Add(this.PassWordLabel);
             this.Controls.Add(this.label2);
@@ -202,8 +174,6 @@
         private System.Windows.Forms.TextBox PassWordLabel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button LoginBtn;
-        private System.Windows.Forms.Label NewRegisterLabel;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label ReRegisterPassLabel;
     }
 }

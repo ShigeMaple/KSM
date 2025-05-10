@@ -18,6 +18,7 @@ namespace KSM
 
             this.displayId.Location = new Point((1280 - this.displayId.Width) / 2, 15);
             this.blueBox.Location = new Point(1280 - 191, 0);
+            SetContent(new StudentList());
         }
 
         private void MainForm_Resize(object sender, EventArgs e)
@@ -38,6 +39,34 @@ namespace KSM
 
             this.displayId.Location = new Point((control.Width - this.displayId.Width) / 2, 15);
             this.blueBox.Location = new Point(control.Width - 191, 0);
+        }
+
+        private void contentPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        /// <summary>
+        /// 右下のContentsエリアにフォームを配置。
+        /// フォームのタイトルバーとタイトルも更新。
+        /// </summary>
+        /// <param name="form">設定するフォームのインスタンス</param>
+        private void SetContent(Form form) 
+        {
+            contentPanel.Controls.Clear();
+            //StudentList sl = new StudentList();
+            form.TopLevel = false;
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.Dock = DockStyle.Fill;
+            contentPanel.Controls.Add(form);
+            form.Show();
+            displayId.Text = form.Text;
+            Text = form.Text;
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
         }
     }
 }
