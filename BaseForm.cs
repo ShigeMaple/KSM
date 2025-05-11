@@ -15,9 +15,17 @@ namespace KSM
         public BaseForm()
         {
             InitializeComponent();
-
-            this.displayId.Location = new Point((1280 - this.displayId.Width) / 2, 15);
             this.blueBox.Location = new Point(1280 - 191, 0);
+        }
+        
+        /// <summary>
+        /// form.Textを基に画面タイトル(ラベル)の文字列を更新する関数。
+        /// </summary>
+        /// <param name="form">自クラス(FormObject)</param>
+        protected void UpdateDisplayID(Form form)
+        {
+            this.displayId.Text = form.Text;
+            this.displayId.Location = new Point((1280 - this.displayId.Width) / 2, 15);
         }
 
         private void MainForm_Resize(object sender, EventArgs e)

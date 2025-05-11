@@ -15,6 +15,8 @@ namespace KSM
         public ScoreEntry()
         {
             InitializeComponent();
+            // タイトルのラベル文字列を「採点結果入力」に変更
+            base.UpdateDisplayID(this);
         }
 
         private void ScoreEntry_Resize(object sender, EventArgs e)
