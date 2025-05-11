@@ -41,11 +41,6 @@ namespace KSM
             this.blueBox.Location = new Point(control.Width - 191, 0);
         }
 
-        private void contentPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         /// <summary>
         /// 右下のContentsエリアにフォームを配置。
         /// フォームのタイトルバーとタイトルも更新。
