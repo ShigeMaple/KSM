@@ -85,5 +85,10 @@ namespace KSM
             //Textの描画
             e.Graphics.DrawString(txt, e.Font, textBrush, e.Bounds, sf);
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
