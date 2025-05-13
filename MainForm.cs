@@ -39,6 +39,9 @@ namespace KSM
 
             this.displayId.Location = new Point((control.Width - this.displayId.Width) / 2, 15);
             this.blueBox.Location = new Point(control.Width - 191, 0);
+
+            // TODO
+            this.powerOffBtn.Location = new Point(67,control.Bottom);
         }
 
         /// <summary>

@@ -31,31 +31,31 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.contentPanel = new System.Windows.Forms.Panel();
             this.menuPanel = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.poweroffIcon = new System.Windows.Forms.PictureBox();
+            this.logoutIcon = new System.Windows.Forms.PictureBox();
+            this.kumonIcon = new System.Windows.Forms.PictureBox();
+            this.powerOffBtn = new System.Windows.Forms.Label();
+            this.logoutBtn = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.loginUserNameBtn = new System.Windows.Forms.Label();
             this.linkLabel4 = new System.Windows.Forms.LinkLabel();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.headerPanel = new System.Windows.Forms.Panel();
             this.displayId = new System.Windows.Forms.Label();
-            this.splitPanel = new System.Windows.Forms.Panel();
             this.blueBox = new System.Windows.Forms.PictureBox();
             this.blueLine = new System.Windows.Forms.PictureBox();
             this.icon = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.splitPanel = new System.Windows.Forms.Panel();
             this.menuPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.poweroffIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoutIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kumonIcon)).BeginInit();
             this.headerPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.blueBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.blueLine)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.icon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // contentPanel
@@ -69,13 +69,13 @@
             // menuPanel
             // 
             this.menuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.menuPanel.Controls.Add(this.pictureBox3);
-            this.menuPanel.Controls.Add(this.pictureBox2);
-            this.menuPanel.Controls.Add(this.pictureBox1);
-            this.menuPanel.Controls.Add(this.label4);
-            this.menuPanel.Controls.Add(this.label3);
+            this.menuPanel.Controls.Add(this.poweroffIcon);
+            this.menuPanel.Controls.Add(this.logoutIcon);
+            this.menuPanel.Controls.Add(this.kumonIcon);
+            this.menuPanel.Controls.Add(this.powerOffBtn);
+            this.menuPanel.Controls.Add(this.logoutBtn);
             this.menuPanel.Controls.Add(this.label1);
-            this.menuPanel.Controls.Add(this.label2);
+            this.menuPanel.Controls.Add(this.loginUserNameBtn);
             this.menuPanel.Controls.Add(this.linkLabel4);
             this.menuPanel.Controls.Add(this.linkLabel3);
             this.menuPanel.Controls.Add(this.linkLabel2);
@@ -85,25 +85,55 @@
             this.menuPanel.Size = new System.Drawing.Size(256, 601);
             this.menuPanel.TabIndex = 1;
             // 
-            // label4
+            // poweroffIcon
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("HGS創英角ﾎﾟｯﾌﾟ体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label4.Location = new System.Drawing.Point(67, 544);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 16);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "終了";
+            this.poweroffIcon.Image = global::KSM.Properties.Resources.poweroff_logo;
+            this.poweroffIcon.Location = new System.Drawing.Point(25, 536);
+            this.poweroffIcon.Name = "poweroffIcon";
+            this.poweroffIcon.Size = new System.Drawing.Size(28, 27);
+            this.poweroffIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.poweroffIcon.TabIndex = 11;
+            this.poweroffIcon.TabStop = false;
             // 
-            // label3
+            // logoutIcon
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("HGS創英角ﾎﾟｯﾌﾟ体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label3.Location = new System.Drawing.Point(67, 507);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 16);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "ログアウト";
+            this.logoutIcon.Image = global::KSM.Properties.Resources.logout_logo;
+            this.logoutIcon.Location = new System.Drawing.Point(22, 492);
+            this.logoutIcon.Name = "logoutIcon";
+            this.logoutIcon.Size = new System.Drawing.Size(39, 38);
+            this.logoutIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.logoutIcon.TabIndex = 10;
+            this.logoutIcon.TabStop = false;
+            // 
+            // kumonIcon
+            // 
+            this.kumonIcon.Image = global::KSM.Properties.Resources.kumon_logo;
+            this.kumonIcon.Location = new System.Drawing.Point(25, 463);
+            this.kumonIcon.Name = "kumonIcon";
+            this.kumonIcon.Size = new System.Drawing.Size(28, 23);
+            this.kumonIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.kumonIcon.TabIndex = 9;
+            this.kumonIcon.TabStop = false;
+            // 
+            // powerOffBtn
+            // 
+            this.powerOffBtn.AutoSize = true;
+            this.powerOffBtn.Font = new System.Drawing.Font("HGS創英角ﾎﾟｯﾌﾟ体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.powerOffBtn.Location = new System.Drawing.Point(67, 544);
+            this.powerOffBtn.Name = "powerOffBtn";
+            this.powerOffBtn.Size = new System.Drawing.Size(39, 16);
+            this.powerOffBtn.TabIndex = 8;
+            this.powerOffBtn.Text = "終了";
+            // 
+            // logoutBtn
+            // 
+            this.logoutBtn.AutoSize = true;
+            this.logoutBtn.Font = new System.Drawing.Font("HGS創英角ﾎﾟｯﾌﾟ体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.logoutBtn.Location = new System.Drawing.Point(67, 507);
+            this.logoutBtn.Name = "logoutBtn";
+            this.logoutBtn.Size = new System.Drawing.Size(87, 16);
+            this.logoutBtn.TabIndex = 7;
+            this.logoutBtn.Text = "ログアウト";
             // 
             // label1
             // 
@@ -114,15 +144,15 @@
             this.label1.Size = new System.Drawing.Size(0, 16);
             this.label1.TabIndex = 6;
             // 
-            // label2
+            // loginUserNameBtn
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("HGS創英角ﾎﾟｯﾌﾟ体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label2.Location = new System.Drawing.Point(67, 468);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 16);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "公文A　さん";
+            this.loginUserNameBtn.AutoSize = true;
+            this.loginUserNameBtn.Font = new System.Drawing.Font("HGS創英角ﾎﾟｯﾌﾟ体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.loginUserNameBtn.Location = new System.Drawing.Point(67, 468);
+            this.loginUserNameBtn.Name = "loginUserNameBtn";
+            this.loginUserNameBtn.Size = new System.Drawing.Size(98, 16);
+            this.loginUserNameBtn.TabIndex = 5;
+            this.loginUserNameBtn.Text = "公文A　さん";
             // 
             // linkLabel4
             // 
@@ -197,14 +227,6 @@
             this.displayId.Text = "トップ";
             this.displayId.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // splitPanel
-            // 
-            this.splitPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(154)))), ((int)(((byte)(214)))));
-            this.splitPanel.Location = new System.Drawing.Point(0, 70);
-            this.splitPanel.Name = "splitPanel";
-            this.splitPanel.Size = new System.Drawing.Size(1264, 10);
-            this.splitPanel.TabIndex = 3;
-            // 
             // blueBox
             // 
             this.blueBox.Image = global::KSM.Properties.Resources.BlueBoxes;
@@ -236,35 +258,13 @@
             this.icon.TabIndex = 0;
             this.icon.TabStop = false;
             // 
-            // pictureBox3
+            // splitPanel
             // 
-            this.pictureBox3.Image = global::KSM.Properties.Resources.poweroff_logo;
-            this.pictureBox3.Location = new System.Drawing.Point(25, 536);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(28, 27);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox3.TabIndex = 11;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::KSM.Properties.Resources.logout_logo;
-            this.pictureBox2.Location = new System.Drawing.Point(22, 492);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(39, 38);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 10;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::KSM.Properties.Resources.kumon_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(25, 463);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(28, 23);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
+            this.splitPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(154)))), ((int)(((byte)(214)))));
+            this.splitPanel.Location = new System.Drawing.Point(0, 70);
+            this.splitPanel.Name = "splitPanel";
+            this.splitPanel.Size = new System.Drawing.Size(1264, 10);
+            this.splitPanel.TabIndex = 3;
             // 
             // MainForm
             // 
@@ -283,14 +283,14 @@
             this.Resize += new System.EventHandler(this.MainForm_Resize);
             this.menuPanel.ResumeLayout(false);
             this.menuPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.poweroffIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoutIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kumonIcon)).EndInit();
             this.headerPanel.ResumeLayout(false);
             this.headerPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.blueBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.blueLine)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.icon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -308,14 +308,14 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.LinkLabel linkLabel3;
         private System.Windows.Forms.LinkLabel linkLabel2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label powerOffBtn;
+        private System.Windows.Forms.Label logoutBtn;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label loginUserNameBtn;
         private System.Windows.Forms.LinkLabel linkLabel4;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox kumonIcon;
+        private System.Windows.Forms.PictureBox logoutIcon;
+        private System.Windows.Forms.PictureBox poweroffIcon;
     }
 }
 
