@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChangeStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeStudent.Designer.cs">
+      <DependentUpon>ChangeStudent.cs</DependentUpon>
+    </Compile>
     <Compile Include="LearningHistory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,12 +87,21 @@
     <Compile Include="ScoreEntry.Designer.cs">
       <DependentUpon>ScoreEntry.cs</DependentUpon>
     </Compile>
+    <Compile Include="StudentInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentInfo.Designer.cs">
+      <DependentUpon>StudentInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="StudentList.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="StudentList.Designer.cs">
       <DependentUpon>StudentList.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ChangeStudent.resx">
+      <DependentUpon>ChangeStudent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LearningHistory.resx">
       <DependentUpon>LearningHistory.cs</DependentUpon>
     </EmbeddedResource>
@@ -111,6 +126,9 @@
     </Compile>
     <EmbeddedResource Include="ScoreEntry.resx">
       <DependentUpon>ScoreEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentInfo.resx">
+      <DependentUpon>StudentInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentList.resx">
       <DependentUpon>StudentList.cs</DependentUpon>

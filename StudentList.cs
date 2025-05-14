@@ -12,14 +12,24 @@ namespace KSM
 {
     public partial class StudentList : Form
     {
-        public StudentList()
+        private Form mainForm;
+        public StudentList(Form mainForm)
         {
             InitializeComponent();
+            this.mainForm = mainForm;
         }
 
         private void StudentList_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form form = new ScoreEntry();
+            mainForm.Hide();
+            form.ShowDialog();
+            mainForm.Show();
         }
     }
 }
