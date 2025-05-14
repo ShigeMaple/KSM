@@ -17,8 +17,8 @@ namespace KSM
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new LoginForm());
-            Application.Run(new ScoreEntry());
-            //Application.Run(new MainForm());
+            //Application.Run(new ScoreEntry());
+            Application.Run(new MainForm());
             //Application.Run(new LearningHistory());
         }
     }
