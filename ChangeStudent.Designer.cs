@@ -172,7 +172,7 @@
             this.Controls.Add(this.splitPanel);
             this.Controls.Add(this.headerPanel);
             this.Name = "ChangeStudent";
-            this.Text = "ChangeStudent";
+            this.Text = "生徒変更";
             this.Load += new System.EventHandler(this.ChangeStudent_Load);
             this.headerPanel.ResumeLayout(false);
             this.headerPanel.PerformLayout();
