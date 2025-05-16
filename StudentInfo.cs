@@ -18,5 +18,17 @@ namespace KSM
             InitializeComponent();
             this.mainForm = mainForm;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form form = new AddStudent();
+            form.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form form = new BulkChangeStudentInfo();
+            form.ShowDialog();
+        }
     }
 }
