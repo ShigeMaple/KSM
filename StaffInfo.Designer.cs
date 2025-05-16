@@ -38,7 +38,6 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.button2.Enabled = false;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("游ゴシック", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(815, 32);
@@ -47,6 +46,7 @@
             this.button2.TabIndex = 8;
             this.button2.Text = "一括更新​";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -59,6 +59,7 @@
             this.button1.TabIndex = 7;
             this.button1.Text = "新規スタッフ追加";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView1
             // 
