@@ -31,5 +31,13 @@ namespace KSM
             form.ShowDialog();
             mainForm.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form form = new LearningHistory();
+            mainForm.Hide();
+            form.ShowDialog();
+            mainForm.Show();
+        }
     }
 }
