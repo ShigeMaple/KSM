@@ -18,8 +18,14 @@ namespace KSM
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new LoginForm());
             //Application.Run(new ScoreEntry());
-            Application.Run(new MainForm());
+            //Application.Run(new MainForm());
+            //Application.Run(new ChangeStudentInfo());
             //Application.Run(new LearningHistory());
+            //Application.Run(new ChangeStudent())
+            Application.Run(new ChangeStaffInfo());
+            //Application.Run(new BulkChangeStudentInfo());
+            //Application.Run(new BulkChangeStaffInfo());
+
         }
     }
 }

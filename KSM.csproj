@@ -38,6 +38,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -91,12 +92,6 @@
     <Compile Include="DataOutput.Designer.cs">
       <DependentUpon>DataOutput.cs</DependentUpon>
     </Compile>
-    <Compile Include="LearningHistory.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LearningHistory.Designer.cs">
-      <DependentUpon>LearningHistory.cs</DependentUpon>
-    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,11 +118,29 @@
     <Compile Include="BulkChangeStudentInfo.Designer.cs">
       <DependentUpon>BulkChangeStudentInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="LearningHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LearningHistory.Designer.cs">
+      <DependentUpon>LearningHistory.cs</DependentUpon>
+    </Compile>
     <Compile Include="ScoreEntry.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ScoreEntry.Designer.cs">
       <DependentUpon>ScoreEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScoreGraphForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScoreGraphForm.Designer.cs">
+      <DependentUpon>ScoreGraphForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScoreListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScoreListForm.Designer.cs">
+      <DependentUpon>ScoreListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="StaffInfo.cs">
       <SubType>Form</SubType>
@@ -168,9 +181,6 @@
     <EmbeddedResource Include="DataOutput.resx">
       <DependentUpon>DataOutput.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LearningHistory.resx">
-      <DependentUpon>LearningHistory.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -193,8 +203,17 @@
     <EmbeddedResource Include="BulkChangeStudentInfo.resx">
       <DependentUpon>BulkChangeStudentInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LearningHistory.resx">
+      <DependentUpon>LearningHistory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ScoreEntry.resx">
       <DependentUpon>ScoreEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScoreGraphForm.resx">
+      <DependentUpon>ScoreGraphForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScoreListForm.resx">
+      <DependentUpon>ScoreListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StaffInfo.resx">
       <DependentUpon>StaffInfo.cs</DependentUpon>
@@ -221,6 +240,7 @@
   <ItemGroup>
     <Content Include="BlueBoxes.png" />
     <Content Include="BlueLines.png" />
+    <Content Include="calendar.png" />
     <Content Include="Icon.ico" />
     <Content Include="Icon.png" />
     <Content Include="kumon_logo.png" />
