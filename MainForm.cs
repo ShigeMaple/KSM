@@ -22,7 +22,9 @@ namespace KSM
             this.displayId.Location = new Point((1280 - this.displayId.Width) / 2, 15);
             this.blueBox.Location = new Point(1280 - 191, 0);
             SetContent(new StudentList(this));
-            
+            //SetContent(new StaffInfo(this));
+            //SetContent(new DataOutput(this));
+
         }
 
         private void MainForm_Resize(object sender, EventArgs e)
@@ -106,6 +108,18 @@ namespace KSM
         {
             this.displayId.Text = form.Text;
             this.displayId.Location = new Point((1280 - this.displayId.Width) / 2, 15);
+        }
+
+        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ChangeLinkColor(sender as LinkLabel);
+            SetContent(new DataOutput(this));
+        }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ChangeLinkColor(sender as LinkLabel);
+            SetContent(new StaffInfo(this));
         }
     }
 }
