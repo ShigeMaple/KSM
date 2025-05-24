@@ -231,7 +231,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(110, 38);
             this.label8.TabIndex = 40;
-            this.label8.Text = "生徒名";
+            this.label8.Text = "性別";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // AddStudent
